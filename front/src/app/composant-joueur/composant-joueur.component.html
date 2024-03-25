@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Liste des Joueurs</h2>
+  <table class="joueurs-table">
+    <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Âge</th>
+      <th>Niveau</th>
+      <th>Sexe</th>
+      <th>Points</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let joueur of joueurs">
+      <td>{{ joueur.nom }}</td>
+      <td>{{ joueur.prenom }}</td>
+      <td>{{ joueur.categorie.age }}</td>
+      <td>{{ joueur.categorie.niveau }}</td>
+      <td>{{ joueur.sexe }}</td>
+      <td>{{ joueur.point }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
